@@ -370,4 +370,12 @@ case 15:
   printf("             We hope to see you again!  \n");
   printf("\t======================================  \n");
 
-}
+}# This code is used to convert a file into a different format.
+    # The main function used is the convert_format() function, which takes
+    # two arguments - the file path to the input file, and the format to 
+    # convert the file to.
+    # The input file can be any type. The desired output format is specified
+    # in the form of a file extension string.
+    # The output of the convert_format() function is the filename of the 
+    # converted file, stored in the same directory as the original file.
+    # Any additional details can be found in the function documentation.
