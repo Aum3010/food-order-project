@@ -482,4 +482,82 @@ print(calc.divide())  # Output: 1.6666666666666667
 print(square(4))  # Output: 16
 ```
 
-In this example, I have provided an overview of the file's purpose, including its main functionality. I have also documented each function and method, including their purpose, parameters, and return values. Additionally, I have included a usage example at the end of the file.
+In this example, I have provided an overview of the file's purpose, including its main functionality. I have also documented each function and method, including their purpose, parameters, and return values. Additionally, I have included a usage example at the end of the file.-- File: food-order.c
+- Overview:
+This file contains the implementation of a food ordering system. It includes functions for adding items to the order, calculating the total cost, and displaying the order details.
+
+- Functions/Methods:
+
+1. add_item_to_order:
+   - Description: Adds an item to the order.
+   - Parameters:
+     - item_name (string): The name of the item to add.
+     - price (float): The price of the item.
+   - Returns: None
+
+2. calculate_total_cost:
+   - Description: Calculates the total cost of the order.
+   - Parameters: None
+   - Returns: The total cost of the order (float).
+
+3. display_order_details:
+   - Description: Displays the details of the order, including the items and their prices.
+   - Parameters: None
+   - Returns: None
+
+-- Actual Code:
+```c
+#include <stdio.h>
+
+#define MAX_ITEMS 10
+
+char items[MAX_ITEMS][50];
+float prices[MAX_ITEMS];
+int num_items = 0;
+
+void add_item_to_order(char item_name[], float price) {
+    if (num_items < MAX_ITEMS) {
+        strcpy(items[num_items], item_name);
+        prices[num_items] = price;
+        num_items++;
+    }
+}
+
+float calculate_total_cost() {
+    float total_cost = 0.0;
+    for (int i = 0; i < num_items; i++) {
+        total_cost += prices[i];
+    }
+    return total_cost;
+}
+
+void display_order_details() {
+    printf("Order Details:\n");
+    for (int i = 0; i < num_items; i++) {
+        printf("%s - $%.2f\n", items[i], prices[i]);
+    }
+}
+
+int main() {
+    // Usage example
+    add_item_to_order("Pizza", 9.99);
+    add_item_to_order("Burger", 5.99);
+    add_item_to_order("Fries", 2.99);
+    
+    display_order_details();
+    
+    float total_cost = calculate_total_cost();
+    printf("Total Cost: $%.2f\n", total_cost);
+    
+    return 0;
+}
+```
+
+- Usage Example:
+```
+Order Details:
+Pizza - $9.99
+Burger - $5.99
+Fries - $2.99
+Total Cost: $18.97
+```
