@@ -378,4 +378,27 @@ case 15:
     # in the form of a file extension string.
     # The output of the convert_format() function is the filename of the 
     # converted file, stored in the same directory as the original file.
-    # Any additional details can be found in the function documentation.``````
+    # Any additional details can be found in the function documentation.``````Sure! Here's an example of how you can generate documentation for the code using comment tags in Python:
+
+```python
+# File: [File Name]
+
+# Overview:
+# [Provide an overview of the file's purpose, including its main functionality and importance within the project.]
+
+# Function/Method 1
+# Name: [Function/Method name]
+# Description: [Brief explanation of its purpose]
+# Parameters: [Description of input parameters and their types]
+# Returns: [Description of the return value and its type (if applicable)]
+
+# Function/Method 2
+# Name: [Function/Method name]
+# Description: [Brief explanation of its purpose]
+# Parameters: [Description of input parameters and their types]
+# Returns: [Description of the return value and its type (if applicable)]
+
+# [Repeat for each function/method in the file]
+```
+
+You can use similar comment tags in other programming languages as well, such as `/* ... */` in C/C++, `// ...` in JavaScript, or `<!-- ... -->` in HTML. Just replace the comment tags in the template above with the appropriate ones for the programming language you are using.
