@@ -401,4 +401,85 @@ case 15:
 # [Repeat for each function/method in the file]
 ```
 
-You can use similar comment tags in other programming languages as well, such as `/* ... */` in C/C++, `// ...` in JavaScript, or `<!-- ... -->` in HTML. Just replace the comment tags in the template above with the appropriate ones for the programming language you are using.
+You can use similar comment tags in other programming languages as well, such as `/* ... */` in C/C++, `// ...` in JavaScript, or `<!-- ... -->` in HTML. Just replace the comment tags in the template above with the appropriate ones for the programming language you are using.Sure! Here's an example of generating internal documentation and comments for a Python code file:
+
+```python
+# File: example.py
+# Overview:
+# This file contains a class and several functions for performing mathematical operations.
+
+class Calculator:
+    """A class for performing basic mathematical operations."""
+
+    def __init__(self, num1, num2):
+        """
+        Constructor method for the Calculator class.
+
+        Parameters:
+        - num1 (int): The first number.
+        - num2 (int): The second number.
+        """
+        self.num1 = num1
+        self.num2 = num2
+
+    def add(self):
+        """
+        Adds the two numbers.
+
+        Returns:
+        - int: The sum of the two numbers.
+        """
+        return self.num1 + self.num2
+
+    def subtract(self):
+        """
+        Subtracts the second number from the first number.
+
+        Returns:
+        - int: The difference between the two numbers.
+        """
+        return self.num1 - self.num2
+
+    def multiply(self):
+        """
+        Multiplies the two numbers.
+
+        Returns:
+        - int: The product of the two numbers.
+        """
+        return self.num1 * self.num2
+
+    def divide(self):
+        """
+        Divides the first number by the second number.
+
+        Returns:
+        - float: The quotient of the two numbers.
+        """
+        return self.num1 / self.num2
+
+
+def square(num):
+    """
+    Calculates the square of a number.
+
+    Parameters:
+    - num (int): The number to be squared.
+
+    Returns:
+    - int: The square of the number.
+    """
+    return num ** 2
+
+
+# Usage example:
+calc = Calculator(5, 3)
+print(calc.add())  # Output: 8
+print(calc.subtract())  # Output: 2
+print(calc.multiply())  # Output: 15
+print(calc.divide())  # Output: 1.6666666666666667
+
+print(square(4))  # Output: 16
+```
+
+In this example, I have provided an overview of the file's purpose, including its main functionality. I have also documented each function and method, including their purpose, parameters, and return values. Additionally, I have included a usage example at the end of the file.
